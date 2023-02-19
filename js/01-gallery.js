@@ -17,8 +17,8 @@ const markup = galleryItems.map(({preview, original, description}) => {
 </li>
     `
 }
-
 )
+
 imagesList.insertAdjacentHTML('beforeend', markup.join(''))
 
 const instance = basicLightbox.create(`
@@ -42,9 +42,7 @@ function onImgClick(event) {
     console.log(src)
 
     instance.element().querySelector("img").src = src
-
-    instance.show()  
-    
+    instance.show()      
 }
 
 function onEscape(event) {
@@ -54,4 +52,3 @@ function onEscape(event) {
 }
 
 
-// instance.show()

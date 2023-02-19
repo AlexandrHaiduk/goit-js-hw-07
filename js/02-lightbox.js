@@ -12,8 +12,8 @@ const markup = galleryItems.map(({preview, original, description}) => {
 </li>
     `
 }
-
 )
+
 imagesList.insertAdjacentHTML('beforeend', markup.join(''))
 
 
